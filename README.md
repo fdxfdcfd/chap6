@@ -16,15 +16,4 @@ to
 bson = require('../browser_build/bson');
 
 
-ERRor2:
-TypeError: Cannot read property '0' of undefined
-
-Fix2:
-Change in facebook.js 
-passport.use(new FacebookStrategy({
-            clientID: config.facebook.clientID,
-            clientSecret: config.facebook.clientSecret,
-            callbackURL: config.facebook.callbackURL,
-            passReqToCallback: true,
-            profileFields: ['id', 'emails', 'name','displayName']// <- add this
-        },
+Hugo
