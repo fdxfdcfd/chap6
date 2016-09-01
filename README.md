@@ -4,7 +4,9 @@ install:  run npm install
 run: run node server
 
 Error1
+
  Error: Cannot find module '../build/Release/bson'
+
 Fix1:
 
  find in npm module ..node_modules\bson\ext\index.js
