@@ -14,5 +14,15 @@ module.exports = function(app) {
         }));
 
     app.get('/signout', users.signout);
+    
+    app.get('/oauth/facebook', passport.authenticate('facebook', {
+        failureRedirect: '/signin',
+        scope: [ 'email' ]
+    }));
+    app.get('/oauth/facebook/callback', passport.authenticate('facebook', {
+        failureRedirect: '/signin',
+        successRedirect: '/',
+        scope: [ 'email' ]
+    }));
 
 };
