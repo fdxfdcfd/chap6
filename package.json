@@ -16,5 +16,9 @@
         "passport-facebook": "~1.0.3",
         "passport-twitter": "~1.0.2",
         "passport-google-oauth": "~0.1.5"
+    },
+    "engines": {
+        "node": "6.3.1",
+        "npm": "3.10.3"
     }
 }
