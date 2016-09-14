@@ -1,13 +1,10 @@
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 var mongoose = require('./config/mongoose'),
-express = require('./config/express');
+express = require('./config/express'),
 passport = require('./config/passport');
-
 var db = mongoose();
-var app = express();
+var app = express(db);
 var passport = passport();
-app.set('port', (process.env.PORT || 3000));
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
+app.listen(3000);
 module.exports = app;
+console.log('Server running at http://localhost:3000/');
