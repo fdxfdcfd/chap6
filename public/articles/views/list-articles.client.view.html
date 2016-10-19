@@ -1,12 +1,18 @@
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-66725725-2', 'auto');
-  ga('send', 'pageview');
-
+    ga('create', 'UA-66725725-2', 'auto');
+    ga('send', 'pageview');
 </script>
 <section data-ng-controller="ArticlesController" data-ng-init="find()">
     <h1>Articles</h1>
@@ -21,7 +27,6 @@
         </li>
     </ul>
     <div data-ng-hide="!articles || articles.length">
-        No articles yet, why don't you <a href="/#!/articles/
-create">create one</a>?
+        No articles yet, why don't you <a href="/#!/articles/create">create one</a>?
     </div>
 </section>
